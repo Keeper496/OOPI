@@ -13,9 +13,6 @@ package group_project_12_6;
  */
 public class Group_Project_12_6 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         
     }
