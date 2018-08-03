@@ -66,8 +66,8 @@ public class Group_Project_12_6 {
         
       
         
-            System.out.println(Blurb());
-            
+        System.out.println(Blurb());
+    
         
     }
 }
