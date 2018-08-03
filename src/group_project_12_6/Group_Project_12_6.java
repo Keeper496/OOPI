@@ -6,18 +6,68 @@
 //********************************************************************************
 
 package group_project_12_6;
+import java.util.Random;
+import java.util.Scanner;
+
 
 /**
  *
  * @author keepe
  */
 public class Group_Project_12_6 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+    // random number generator used by all functions
+    public static Random r = new Random();
+    public static String Blurb()
+    {
+        // A Blurb is a Whoozit
+        String result = Whoozit();
+        int num = r.nextInt(9) + 1;
+        for (int i = 0; i < num; i++)
+        {
+            result += Whatzit();
+        }
+        return result;
+    }
+    public static String Whoozit()
+    {
+        // A Whoozit is the character 'x'
+        String result = "x";
+        int num = r.nextInt(9);
+        for (int i = 0; i < num; i++)
+        {
+            // followed by zero or more 'y's.
+            result += "y";
+        }
+        return result;
+    }
+    public static String Whatzit()
+    {
+        // A Whatzit is a 'q'
+        String result = "q";
+        int num = r.nextInt(2);
+        if (num == 0)
+        {
+            // followed by either a 'z' or a 'd',
+            result += "z";
+        }
+        else // (num == 1)
+        {
+            result += "d";
+        }
+        result += Whoozit();
+        return result;
+    }
+    // main method
+    public static void main(String[] args)
+    {
+        // Create a scanner class
+       
+        
+        
+      
+        
+            System.out.println(Blurb());
+            
         
     }
-    
 }
