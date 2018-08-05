@@ -7,13 +7,7 @@
 
 package group_project_12_6;
 import java.util.Random;
-import java.util.Scanner;
 
-
-/**
- *
- * @author keepe
- */
 public class Group_Project_12_6 {
     // random number generator used by all functions
     public static Random r = new Random();
@@ -60,12 +54,6 @@ public class Group_Project_12_6 {
     // main method
     public static void main(String[] args)
     {
-        // Create a scanner class
-       
-        
-        
-      
-        
         System.out.println(Blurb());
     
         
